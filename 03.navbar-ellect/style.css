@@ -1,0 +1,66 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+img {
+   object-fit: cover;
+   width: 100%;
+}
+
+
+/* Start CSS */
+
+header {
+   position: sticky;
+   top: 0;
+   background-color: black;
+   box-sizing: 0px 3px 10px rgba(0,0,0, 0.3);
+}
+nav {
+   width: 90%;
+   margin: auto;
+   min-height: 9vh;
+   line-height: 9vh;
+}
+nav ul {
+   /* flex: 1; */
+   display: flex;
+   justify-content: end;
+   align-items: center;
+   font-size: 20px;
+}
+nav ul li {
+   margin: 0 auto;
+   list-style: none;
+}
+nav ul li a {
+   color: white;
+   text-decoration: none;
+   padding: 10px 17px;
+   border-radius: 2px;
+   transition: all 0.5s ease;
+}
+
+section {
+   height: 100vh;
+}
+section img {
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+}
+
+/* 
+   color: coral;
+   color: chartreuse;
+   color: chocolate;
+   color: cadetblue;
+*/
+
+.trans {
+   position: absolute;
+   background-color: coral;
+   z-index: -9;
+}
