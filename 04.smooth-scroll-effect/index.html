@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Smooth Scroll Effect</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <!-- Start Header -->
+   <header>
+      <nav>
+         <ul>
+            <li><a href="#home">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#services">services</a></li>
+            <li><a href="#contact">contact</a></li>
+         </ul>
+      </nav>
+   </header>
+   <!-- End of Header -->
+
+   <main>
+      <!-- Start of Home Section -->
+      <section class="home_area" id="home">
+         <h2>Home</h2>
+         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, repellat!</p>
+      </section>
+      <!-- End of Home Section -->
+
+      <!-- Start of About Section -->
+      <section class="about_area" id="about">
+         <h2>About</h2>
+         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, repellat!</p>
+      </section>
+      <!-- End of About Section -->
+
+      <!-- Start of services Section -->
+      <section class="services_area" id="services">
+         <h2>Services</h2>
+         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, repellat!</p>
+      </section>
+      <!-- End of Services Section -->
+
+      <!-- Start of Contact Section -->
+      <section class="contact_area" id="contact">
+         <h2>Contact</h2>
+         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, repellat!</p>
+      </section>
+      <!-- End of Contact Section -->
+   </main>
+   
+
+   <!-- https://github.com/cferdinandi/smooth-scroll --> 
+   <!-- Get a specific version -->
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+
+   <script>
+      const scroll = new SmoothScroll('nav a[href*="#"]', {
+	speed: 3000
+});
+   </script>
+</body>
+</html>
