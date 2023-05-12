@@ -1,0 +1,59 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+ul li {
+   list-style: none;
+}
+
+img {
+   width: 100vw;
+   height: 100vh;
+   object-fit: cover;
+}
+
+/* Start Section CSS */
+.carousel_area {
+   height: 100vh;
+   width: 100%;
+   position: relative;
+   overflow: hidden;
+}
+
+.left_angle,
+.right_angle {
+   position: absolute;
+   top: 50%;
+   font-size: 50px;
+   color: red;
+   border-color: transparent;
+   background-color: transparent;
+   cursor: pointer;
+   z-index: 1;
+   transform: translateY(-50%);
+   transition: all 0.3s ease ;
+}
+.left_angle {
+   left: 0.5rem;
+}
+.right_angle {
+   right: 0.5rem;
+}
+
+/* carousel css */
+.carousel_items {
+   position: relative;
+   transition: transform 0.3s ease;
+}
+.item {
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+
+/* dynamic */
+.hidden {
+   display: none;
+}
