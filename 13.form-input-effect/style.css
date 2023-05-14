@@ -1,0 +1,55 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+
+/* Start Section CSS */
+.contact_area {
+   height: 100vh;
+   width: 100%;
+   background-color: bisque;
+   display: grid;
+   place-content: center;
+}
+
+.form_control {
+   position: relative;
+   height: 100px;
+}
+.form_control input {
+   width: 300px;
+   display: block;
+   font-size: 20px;
+   background: none;
+   border: none;
+   padding: 10px 0;
+   border-bottom: 1px solid red;
+}
+
+.form_control label {
+   position: absolute;
+   top: 0;
+   left: 0;
+   font-size: 20px;
+}
+
+.form_control input:focus,
+.form_control input:valid {
+   outline: none;
+   border-bottom-color: green;
+}
+
+
+/* Dynamic Element */
+.form_control input:focus + label span,
+.form_control input:valid + label span {
+   color: brown;
+   transform: translateY(-35px);
+}
+.form_control label span {
+   display: inline-block;
+   min-width: 5px;
+   transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
