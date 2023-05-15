@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>CSS Property Change</title>
+
+   <!-- Font Awesome v5 Kit -->
+   <!-- <script src="https://kit.fontawesome.com/9e98f3d98f.js" crossorigin="anonymous"></script> -->
+
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <!-- Start of Section -->
+   <section class="shape_area">
+      <div class="container">
+         <div class="shape_setting_wrapper">
+
+            <!-- Vertical Control -->
+            <div class="shape_control">
+               <h4>Vertical
+                  <span>Position Y</span>
+               </h4>
+               <div class="shape_range_control vertical">
+                  <input type="range" min="0" max="59" value="50" id="vertical">
+                  <label for="vertical">
+                     <span>0vh</span>
+                     <span>100vh</span>
+                  </label>
+               </div>
+            </div>
+            
+            <!-- Horizontal Control -->
+            <div class="shape_control">
+               <h4>Horizontal
+                  <span>Position X</span>
+               </h4>
+               <div class="shape_range_control horizontal">
+                  <label for="horizontal">
+                     <span>0vw</span>
+                     <span>100vw</span>
+                  </label>
+                  <input type="range" min="0" max="87.8" step="0.1" value="10" id="horizontal">
+               </div>
+            </div>
+            
+            <!-- Size Control -->
+            <div class="shape_control">
+               <h4>Size</h4>
+               <div class="shape_range_control size">
+                  <label for="size">
+                     <span>0</span>
+                     <span>2</span>
+                  </label>
+                  <input type="range" min="0" max="2" step="0.1" value="1" id="size">
+               </div>
+            </div>
+            
+            <!-- Shape Control -->
+            <div class="shape_control">
+               <h4>Shape</h4>
+               <div class="shape_range_control shape">
+                  <select id="shape_select">
+                     <option value="1">Square</option>
+                     <option value="2">Circle</option>
+                  </select>
+                  <input type="submit" class="shape_btn" value="Ok">
+               </div>
+            </div>
+
+            <!-- RGBA Control -->
+            <div class="shape_control">
+               <h4>RGBA</h4>
+               <div class="shape_range_control rgba">
+                  <!-- red -->
+                  <div class="red">
+                     <input type="range" min="0" max="255" value="0" step="0.01" id="red">
+                     <label for="red">R</label>
+                  </div>
+                  <!-- green -->
+                  <div class="green">
+                     <input type="range" min="0" max="255" value="0" step="0.01" id="green">
+                     <label for="green">G</label>
+                  </div>
+                  <!-- blue -->
+                  <div class="blue">
+                     <input type="range" min="0" max="255" value="0" step="0.01" id="blue">
+                     <label for="blue">B</label>
+                  </div>
+                  <!-- alfa -->
+                  <div class="alfa">
+                     <input type="range" min="0" max="1" value="1" step="0.01" id="alfa">
+                     <label for="alfa">A</label>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+         <!-- end of shape setting wrapper -->
+      </div>
+   </section>
+   <!-- End of Section -->
+
+   <div class="block_wrapper">
+      <div class="block"></div>
+   </div>
+   
+
+   <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+/* Start Section CSS */
+.shape_area {
+   width: 100%;
+   height: 220px;
+}
+
+.shape_setting_wrapper {
+   width: 90vw;
+   margin: 0 auto;
+
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+}
+
+.shape_control {
+   width: 200px;
+   height: 200px;
+   background-color: #444345;
+   color: #fff;
+   margin: 10px;
+   text-align: center;
+   padding: 15px;
+}
+.shape_control h4 {
+   display: inline-block;
+}
+.shape_control h4 span {
+   display: block;
+   font-size: 80%;
+   padding: 5px 0;
+}
+
+.shape_range_control {
+   width: 100px;
+   height: 100px;
+   margin: 30px auto;
+
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.shape_range_control label {
+   display: flex;
+   justify-content: space-between;
+}
+
+/* Vertical */
+.vertical input {
+   width: 75px;
+   transform: rotate(90deg);
+}
+.vertical label {
+   height: 75px;
+   flex-direction: column;
+}
+
+/* Horizontal */
+.horizontal {
+   display: block;
+}
+
+.horizontal label {
+  width: 100px;
+  margin-bottom: 5px;
+
+}
+.horizontal input {
+   width: 100px;
+}
+
+/* Size */
+.size {
+   display: block;
+}
+.size input {
+   width: 100px;
+   margin-bottom: 5px;
+}
+
+/* Shape */
+.shape {
+   display: flex;
+   flex-direction: column;
+}
+.shape select {
+   padding: 5px;
+}
+.shape input {
+   padding: 5px 20px;
+   cursor: pointer;
+}
+
+/* RGBA */
+.rgba {
+   display: block;
+}
+.rgba input {
+   width: 75px;
+}
+.rgba label {
+   display: inline-block;
+}
+
+/* Block */
+.block_wrapper {
+   position: relative;
+   height: calc(100vh - 220px);
+   width: 100%;
+}
+.block {
+   position: absolute;
+   height: 150px;
+   width: 150px;
+   background-color: #000000;
+   top: 50%;
+   left: 5%;
+}
