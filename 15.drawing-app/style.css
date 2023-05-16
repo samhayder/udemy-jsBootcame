@@ -1,0 +1,40 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+
+/* Start Section CSS */
+.drawing_app_area {
+   position: relative;
+   height: 90vh;
+   background-color: aliceblue;
+   margin: 10px auto;
+   border: 3px solid blueviolet;
+}
+
+.canvas_toolbar {
+   position: absolute;
+   width: 100%;
+   min-height: 40px;
+   left: 0;
+   bottom: 0;
+   background: blueviolet;
+   padding: 10px 30px;
+   font-size: 20px;
+}
+
+.canvas_toolbar button {
+   background: none;
+   border: none;
+   outline: none;
+   font-size: 25px;
+   margin: 0 10px;
+   cursor: pointer;
+}
+
+.canvas_toolbar .clear {
+   position: absolute;
+   right: 10px;
+}
