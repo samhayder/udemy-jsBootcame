@@ -1,0 +1,57 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+/* Start Section CSS */
+.memory_games_area {
+   width: 100%;
+   height: 100vh;
+   background-color: antiquewhite;
+}
+
+.container {
+   width: 90%;
+   margin: 0 auto;
+   padding: 25px 0;
+
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   
+}
+
+.memory_card {
+   width: calc(25% - 10px);
+   height: 300px;
+   margin: 5px;
+   position: relative;
+   transform: scale(1);
+   transform-style: preserve-3d;
+   transition: transform 0.3s ease;
+}
+.memory_card.active {
+   transform: scale(0.97);
+   transition: transform 0.15s ease;
+}
+
+.front_face,
+.back_face {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   position: absolute;
+   backface-visibility: hidden;
+}
+
+.front_face {
+   transform: rotateY(0.5turn);
+}
+
+/* Dynamic class */
+.memory_card.flip {
+   transform: rotateY(180deg) perspective(1000px);
+}
+
