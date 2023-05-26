@@ -1,0 +1,61 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+/* Start Section CSS */
+.text_reader_area {
+   width: 100%;
+   height: 100vh;
+   background-color: #151414;
+
+   display: grid;
+   place-items: center;
+}
+.container {
+   width: 75%;
+   margin: 0 auto;
+}
+
+#text_area {
+   width: 100%;
+   min-height: 50vh;
+   background-color: #fff;
+   font-size: 1.5rem;
+   padding: 1rem;
+   border: none;
+   resize: none;
+   border-radius: 10px;
+   transition: all 0.3s ease;
+}
+#text_area:focus {
+   background-color: blueviolet;
+   outline: none;
+   color: #fff;
+}
+
+.control_wrapper {
+   display: flex;
+   justify-content: center;
+   padding: 2rem 0;
+   color: #fff;
+   font-size: 1.25rem;
+}
+
+.btn {
+   background-color: blueviolet;
+   font-size: 1rem;
+   color: #fff;
+   padding: 8px 15px;
+   margin: 0 1rem;
+   outline: none;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+.speed {
+   width: 70px;
+   margin: 0;
+}
