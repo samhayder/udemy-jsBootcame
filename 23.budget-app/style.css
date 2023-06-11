@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul li {
+  list-style: none;
+}
+
+/* Start Section CSS */
+.budget_app_area {
+  width: 100%;
+  min-height: 100vh;
+  background-color: lightslategray;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Budget Title */
+.budget_title {
+  min-height: 10vh;
+  text-align: center;
+  padding-top: 30px;
+}
+.budget_title h2 {
+  color: #fff;
+  font-size: 2.25rem;
+  letter-spacing: 5px;
+}
+
+.budget_balance {
+  margin: 20px 0;
+  border: 1px solid;
+  display: inline-block;
+  padding: 15px 30px;
+  border-radius: 5px;
+}
+.balance_value p {
+  display: inline-block;
+}
+
+/* Budget Header */
+.budget_header {
+  height: 30vh;
+  padding: 0 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.budget_header p {
+  display: inline-block;
+}
+
+.header_income {
+  color: aqua;
+  font-size: 25px;
+  padding: 0 15px;
+}
+
+.expanse_income {
+  color: tomato;
+  font-size: 25px;
+  padding: 0 15px;
+}
+
+/* Budget Dashboard */
+.budget_dashboard {
+  height: 60vh;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.dashboard_title {
+  width: 100%;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  padding: 5px 0;
+  margin-bottom: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.dashboard_content {
+  min-height: 20vh;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 1.15rem;
+  text-transform: capitalize;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #fff;
+}
+.item i {
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.income_tracker .item {
+  color: aqua;
+}
+.expense_tracker .item {
+  color: tomato;
+}
+.all_tracker .item.income {
+  color: aqua;
+}
+.all_tracker .item.expense {
+  color: tomato;
+}
+
+.item_submit {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.item_submit input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+}
+.item_submit input:focus {
+  outline-color: tomato;
+}
+
+.submit input {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-color: transparent;
+}
+
+.income_tracker,
+.expense_tracker,
+.all_tracker {
+  width: 30%;
+}
+
+.all_tracker .dashboard_content {
+  min-height: 31vh;
+}
+
+/* Dynamical CSS */
+.hide {
+  visibility: hidden;
+}
+.active {
+  opacity: 1 !important;
+}

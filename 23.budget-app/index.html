@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Budget App</title>
+
+    <!-- Font Awesome v5 Kit -->
+    <script
+      src="https://kit.fontawesome.com/9e98f3d98f.js"
+      crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Start of Section -->
+    <section class="budget_app_area">
+      <div class="container">
+        <!------- Start Budget Title ------------------->
+        <div class="budget_title">
+          <h2>The Budget App</h2>
+
+          <div class="budget_balance">
+            <div class="balance_value">
+              <p>$</p>
+              <p>0</p>
+            </div>
+          </div>
+        </div>
+        <!------- End Budget Title ------------------->
+
+        <!------- Start Budget Header ------------------->
+        <div class="budget_header">
+          <!-- Header Income -->
+          <div class="header_income">
+            <h4>Income</h4>
+            <div class="income_value">
+              <p>$</p>
+              <p>0</p>
+            </div>
+          </div>
+
+          <!-- Chart -->
+          <div class="chart"></div>
+
+          <!-- Header Income -->
+          <div class="expanse_income">
+            <h4>Outcome</h4>
+            <div class="expanse_value">
+              <p>$</p>
+              <p>0</p>
+            </div>
+          </div>
+        </div>
+        <!------- End Budget Header ------------------->
+
+        <!------- Start Budget Dashboard ----------------->
+        <div class="budget_dashboard">
+          <!------- Start Income Tracker ----------------->
+          <div class="income_tracker">
+            <div class="tab tab-1 dashboard_title">
+              <h4>Income Tracker</h4>
+            </div>
+
+            <div class="active" id="income_tab">
+              <!-- Dashboard content wrapper -->
+              <div class="dashboard_content">
+                <!-- item of ul -->
+                <ul class="list">
+                  <!-- <li class="item">
+                    <div class="item_text">Salary: $0</div>
+                      <div class="item_btn">
+                        <i class="fa fa-edit"></i>
+                        <i class="fa fa-trash"></i>
+                      </div>
+                    </div>
+                  </li> -->
+                </ul>
+              </div>
+
+              <!-- Item Submit -->
+              <div class="item_submit">
+                <div class="item_title">
+                  <input
+                    type="text"
+                    name="title"
+                    id="income_title"
+                    placeholder="Title" />
+                </div>
+                <div class="item_amount">
+                  <input
+                    type="number"
+                    name="amount"
+                    id="income_amount"
+                    placeholder="$0" />
+                </div>
+              </div>
+
+              <!-- submit -->
+              <div class="submit">
+                <input
+                  type="submit"
+                  name="submit"
+                  id="income_submit"
+                  value="Add" />
+              </div>
+            </div>
+          </div>
+          <!------- End Income Tracker ----------------->
+
+          <!------- Start Expense Tracker ----------------->
+          <div class="expense_tracker">
+            <div class="tab tab-2 dashboard_title">
+              <h4>Expense Tracker</h4>
+            </div>
+
+            <div class="hide" id="expense_tab">
+              <!-- Dashboard content wrapper -->
+              <div class="dashboard_content">
+                <!-- item of ul -->
+                <ul class="list"></ul>
+              </div>
+
+              <!-- Item Submit -->
+              <div class="item_submit">
+                <div class="item_title">
+                  <input
+                    type="text"
+                    name="title"
+                    id="expense_title"
+                    placeholder="Title" />
+                </div>
+                <div class="item_amount">
+                  <input
+                    type="number"
+                    name="amount"
+                    id="expense_amount"
+                    placeholder="$0" />
+                </div>
+              </div>
+
+              <!-- submit -->
+              <div class="submit">
+                <input
+                  type="submit"
+                  name="submit"
+                  id="expense_submit"
+                  value="Add" />
+              </div>
+            </div>
+          </div>
+          <!------- End Expense Tracker ----------------->
+
+          <!------- Start All Tracker ----------------->
+          <div class="all_tracker">
+            <div class="tab tab-3 dashboard_title">
+              <h4>All Tracker</h4>
+            </div>
+
+            <div class="hide" id="all_tab">
+              <!-- Dashboard content wrapper -->
+              <div class="dashboard_content">
+                <!-- item of ul -->
+                <ul class="list"></ul>
+              </div>
+            </div>
+          </div>
+          <!------- End All Tracker ----------------->
+        </div>
+        <!------- End Budget Dashboard ----------------->
+      </div>
+    </section>
+    <!-- End of Section -->
+
+    <script src="chart.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
