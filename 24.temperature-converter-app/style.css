@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Start Section CSS */
+.temperature_area {
+  height: 100vh;
+  background: linear-gradient(to bottom, rgb(124, 4, 244), rgb(138, 22, 22));
+  color: whitesmoke;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  margin: 70px 0;
+  font-size: 2.1rem;
+}
+
+.converter_wrapper {
+  width: 400px;
+  height: 600px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+label {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+input {
+  width: 350px;
+  height: 50px;
+  font-size: 1.5rem;
+  color: white;
+  padding: 10px;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid #fff;
+  margin-bottom: 40px;
+}
+
+::placeholder {
+  color: white;
+}
