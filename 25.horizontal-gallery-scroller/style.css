@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Start Section CSS */
+.gallery_area {
+  width: 100vw;
+  height: 100vh;
+  background-color: tomato;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 90vw;
+  height: 80vh;
+  display: flex;
+  cursor: pointer;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  user-select: none;
+  white-space: nowrap;
+  font-size: 0;
+  border: 2px solid white;
+  transition: all 0.3s ease;
+}
+.container.active {
+  cursor: grabbing;
+}
+
+.item {
+  width: 50vw;
+  height: 100vh;
+  object-fit: cover;
+}
