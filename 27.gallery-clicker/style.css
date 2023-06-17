@@ -1,0 +1,49 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+/* Start Section CSS */
+.gallery_clicker_area {
+   height: 100vh;
+   width: 100vw;
+
+   display: flex;
+   justify-content: space-between;
+}
+
+.all_img {
+   display: flex;
+   flex-direction: column;
+}
+.all_img img {
+   width: 20vw;
+   height: 20vh;
+   cursor: pointer;
+}
+
+.preview_img {
+   height: 100vh;
+}
+
+.current_img {
+   width: 100%;
+   height: calc(100% - 5px);
+   object-fit: cover;
+}
+
+img {
+   object-fit: cover;
+}
+
+.animate_img {
+   opacity: 0.4;
+   animation: animate-img 0.4s ease-in-out forwards;
+}
+
+@keyframes animate-img {
+   100% {
+      opacity: 1;
+   }
+}
