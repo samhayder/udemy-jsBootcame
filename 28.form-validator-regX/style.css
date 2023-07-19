@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Start Section CSS */
+.login_area {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(115deg, #c7504e 10%, #491042 100%);
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  width: 400px;
+  height: 400px;
+  background: #321649;
+  padding: 25px 20px;
+  color: #ffffff;
+  border-radius: 15px;
+}
+
+#loginForm {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  text-align: center;
+  font-size: 35px;
+  margin-top: 20px;
+}
+
+.input_field {
+  display: inline-block;
+  width: 100%;
+  font-size: 18px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px dotted #ddd;
+  padding: 10px;
+}
+
+.input_field.valid {
+  color: #44e444;
+}
+.input_field.invalid {
+  color: tomato;
+}
+
+.form_group:nth-child(2) {
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.btn_submit {
+  width: 80%;
+  margin: 10px;
+  padding: 13px;
+  display: inline-block;
+  background: transparent;
+  border: 1px solid #ddd;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 5px;
+  outline: none;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.btn_submit:hover {
+  background: linear-gradient(115deg, #c7504e 10%, #491042 100%);
+  border: none;
+}
