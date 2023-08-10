@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+ul li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* Start Section CSS */
+.buddy_app_area {
+  width: 100%;
+  height: 100vh;
+  color: #ffffff;
+  background-image: url(./img/deadpool-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #ddd;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.25rem;
+  padding: 25px 0;
+}
+
+.wrapper {
+  display: flex;
+  align-items: flex-start;
+  padding: 50px 20px;
+}
+
+.entry_input {
+  width: 40%;
+  padding: 20px;
+  margin-right: 50px;
+}
+.entry_input > div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.entry_input label {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+.entry_input input[type="text"] {
+  width: 100%;
+  height: 35px;
+  display: inline-block;
+  background-color: #063b4f;
+  border: none;
+  outline: none;
+  padding: 10px;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.btn_add_superhero {
+  display: inline-block;
+  width: 100%;
+  padding: 15px;
+  background: transparent;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  border: 1px solid #063b4f;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn_add_superhero:hover {
+  background: #063b4f;
+}
+
+.lists_items {
+  width: 60%;
+  padding: 20px;
+}
+
+.lists_header,
+.item {
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr) 0.5fr; */
+
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.lists_header {
+  background: #063b4f;
+  padding: 20px;
+}
+
+.lists {
+  max-height: 500px;
+  background: #3c3d5b;
+  padding: 20px;
+  overflow: overlay;
+}
+.item {
+  padding: 8px;
+  border-bottom: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.delete {
+  color: tomato;
+  display: flex;
+  justify-content: end;
+  padding: 0 15px;
+  cursor: pointer;
+}
+
+/* validation CSS */
+.validation_area {
+  min-width: 50vw;
+  min-height: 20vh;
+  color: #ffffff;
+  font-size: 2rem;
+  padding: 20px;
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 1s ease;
+
+  z-index: 99;
+}
+
+.validation {
+  background: rgba(205, 6, 6, 0.5);
+  text-align: center;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.validate_success,
+.validate_error {
+  display: none;
+}
+
+.show_validation {
+  display: block;
+}
+
+.remove_validation {
+  display: none;
+}

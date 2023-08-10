@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Comic Buddy App- OOP</title>
+
+    <!-- Font Awesome v5 Kit -->
+    <script
+      src="https://kit.fontawesome.com/9e98f3d98f.js"
+      crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="validation_area">
+      <div class="validation validate_success">Add Superhero</div>
+      <div class="validation validate_error">
+        Unable to Add Superhero <br />
+        Please Fill Out All Form Inputs
+      </div>
+    </div>
+
+    <!-- Start of Section -->
+    <section class="buddy_app_area">
+      <h1 class="title">The Comic Buddy App</h1>
+      <div class="wrapper">
+        <form action="#" class="entry_input" id="superhero_form">
+          <div class="form_group">
+            <label for="name">Superhero Name</label>
+            <input type="text" name="name" id="name" autofocus />
+          </div>
+          <!-- end of superhero name input -->
+
+          <div class="form_group">
+            <label for="universe">Superhero Universe</label>
+            <input type="text" name="universe" id="universe" />
+          </div>
+          <!-- end of superhero universe input -->
+
+          <div class="form_group">
+            <label for="power">Superhero Power</label>
+            <input type="text" name="power" id="power" />
+          </div>
+          <!-- end of superhero power input -->
+
+          <button class="btn_add_superhero">Add Superhero</button>
+        </form>
+        <!-- end of entry input -->
+
+        <div class="lists_items">
+          <div class="lists_header">
+            <h4>Name</h4>
+            <h4>Universe</h4>
+            <h4>Power</h4>
+            <h4>Trash</h4>
+          </div>
+          <!-- end of list header -->
+
+          <ul class="lists">
+            <!--  <li class="item">
+              <h4>Superman</h4>
+              <h4>DC</h4>
+              <h4>Fly</h4>
+              <h4><i class="fa fa-trash delete"></i></h4>
+            </li> -->
+            <!-- end of single item li -->
+          </ul>
+          <!-- end of list -->
+        </div>
+        <!-- end of lists items -->
+      </div>
+    </section>
+    <!-- End of Section -->
+
+    <script src="app.js"></script>
+  </body>
+</html>
