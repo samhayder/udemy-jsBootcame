@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Start Section CSS */
+.section_area {
+  width: 100%;
+  height: 100vh;
+}
+
+.image_card {
+  display: flex;
+}
+.duck,
+.fox,
+.dog {
+  width: 33vw;
+  height: 90vh;
+  background-color: aquamarine;
+  margin-right: 5px;
+}
+
+.duck img,
+.fox img,
+.dog img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.get_image {
+  height: 10vh;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+button {
+  padding: 5px 10px;
+  background-color: transparent;
+  border: 2px solid brown;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+button:hover {
+  background-color: brown;
+  color: white;
+}
