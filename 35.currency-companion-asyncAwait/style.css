@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Start Section CSS */
+section.currency_area {
+  width: 100%;
+  height: 100vh;
+  background: violet;
+}
+
+h2.title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: white;
+  padding: 50px 0;
+}
+
+.currency_container {
+  height: 40vh;
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 30px;
+  margin: 0 auto;
+}
+
+input,
+.get_rate_btn {
+  width: 30vw;
+  font-size: 18px;
+  padding: 10px 15px;
+  margin-bottom: 5px;
+  background: white;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+::placeholder {
+  color: violet;
+}
+
+.get_rate_btn {
+  cursor: pointer;
+  color: tomato;
+  transition: all 1s ease;
+}
+.get_rate_btn:hover {
+  background: tomato;
+  color: white;
+}
+
+.currency_result {
+  text-align: center;
+  font-size: 3rem;
+}
+
+/* Error Message */
+.input_error,
+.invalid_code {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: tomato;
+  color: white;
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  padding: 25px;
+  border-radius: 5px;
+  display: none;
+}
+
+.show {
+  display: block;
+}

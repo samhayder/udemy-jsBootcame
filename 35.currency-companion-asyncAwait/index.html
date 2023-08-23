@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Companion by Async Await</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Error Message -->
+    <div class="error_message">
+      <div class="input_error">please fill out all the input field</div>
+      <div class="invalid_code">invalid currency code</div>
+    </div>
+
+    <!-- Start of Section -->
+    <section class="currency_area">
+      <h2 class="title">Currency Companion</h2>
+
+      <form class="currency_container">
+        <input
+          type="text"
+          class="form_currency_code"
+          placeholder="Form Currency Code" />
+
+        <input
+          type="text"
+          class="to_currency_code"
+          placeholder="To Currency Code" />
+
+        <input
+          type="number"
+          class="exchange_amount"
+          placeholder="Exchange Amount" />
+
+        <input type="submit" class="get_rate_btn" value="Get Rate" />
+      </form>
+
+      <p class="currency_result"><!-- 1 USD ==> 109.25 BDT --></p>
+    </section>
+    <!-- End of Section -->
+
+    <script src="app.js"></script>
+  </body>
+</html>
